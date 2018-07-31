@@ -1,0 +1,14 @@
+docker images:
+
+REPOSITORY                 TAG                 IMAGE ID            CREATED              SIZE
+yourname/ubuntu-tmp-file   latest              d3a0e1dc79b9        About a minute ago   115MB
+ubuntu                     16.04               7aa3602ab41e        3 days ago           115MB
+hello-world                latest              2cb0d9787c4d        2 weeks ago          1.85kB
+
+
+image vs. container
+Image является "чертежом", с помощью которого строится контейнер
+Image содержит в себе название целевой архитектуры, ОС, описание словев файловой системы, конфиг контейнера, который получится из образа   
+
+Container - это сущность с состоянием, внутри он имеет параметр "State"
+Также есть и другие объекты  настройки контейнера - "Network settings"
