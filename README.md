@@ -13,14 +13,17 @@ dmitry-appnext microservices repository
 
 ## Что было сделано
 
-- Создана новая VM
-```
-docker-machine create --driver google \
---google-machine-image https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts \
---google-machine-type n1-standard-1 \
---google-zone europe-west1-b \
-docker-host
-```
+- Создал докерфайл, который копирует конфигурацию прометеуса на машину с прометеусом
+- Сделан ребилд докер-образов микросервисов (post-py, comment, ui) c поддержкой health-check, образы загружены в докер-хаб
+  https://hub.docker.com/r/dmitryappnext/ui/
+  https://hub.docker.com/r/dmitryappnext/comment/
+  https://hub.docker.com/r/dmitryappnext/post/
+  https://hub.docker.com/r/dmitryappnext/prometheus/
+
+- Поднял сервисы, в том числе и прометеус
+- Хелс-чек для серверов (нужно было добавить алиасы к докер-сетям, чтобы хелс-чеки работали)
+- Уронил один сервис, хелс-чек показывал что он не работает
+- Собрал метрики сервера с помощью Node Exporter
 
 # GITLAB CI - 1
 
