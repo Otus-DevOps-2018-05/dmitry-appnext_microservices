@@ -38,8 +38,6 @@ services:
         aliases:
           - comment
 
-  
-
 volumes:
   post_db:
 
