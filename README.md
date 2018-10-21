@@ -6,8 +6,18 @@ dmitry-appnext microservices repository
 - [Docker-3](#docker-3)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-3)]
 - [Docker-4](#docker-4)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-4)]
 - [GitlabCI-1](#gitlabci-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=gitlab-ci-1)]
-- [Monitoring-1](#gitlabci-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-1)]
+- [Monitoring-1](#monitoring-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-1)]
+- [Monitoring-2](#monitoring-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-2)]
 
+# Monitoring - 2
+
+## Что было сделано
+Подключен мониторинг докер-контейнеров с помощью cAdviser, запущенный на <vm-ip>:8080
+
+Визуализация метрик с помощью графана, запущенная на <vm-ip>:3000
+Также в графану добавлены несколько дашбордов с различными метриками
+
+Алертинг: настроен alertmanager в прометеусе, оповещающий о падении сервиса
 
 # Monitoring - 1
 
