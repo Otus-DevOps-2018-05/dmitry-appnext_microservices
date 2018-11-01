@@ -5,6 +5,29 @@ dmitry-appnext microservices repository
 - [Docker-2](#docker-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-2)]
 - [Docker-3](#docker-3)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-3)]
 - [Docker-4](#docker-4)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-4)]
+- [GitlabCI-1](#gitlabci-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=gitlab-ci-1)]
+
+
+# GITLAB CI - 1
+
+## Что было сделано
+
+- созданана новая ВМ
+```
+docker-machine create --driver google --google-machine-image https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts \
+--google-machine-type n1-standard-1 \
+--google-zone europe-west1-b \
+docker-host
+```
+- подключился к ВМ, создал там docker-compose.yml
+- установил на машину docker-compose
+- запустил ``sudo docker-compose up -d``
+- подождал 10 минут и перешел по адресу http://35.241.208.244/ , установил пароль root:password
+- настроил новый проект
+- подключил раннер
+- описал папйплайн
+- загрузил код приложения в гитлаб
+- проверил выполнение пайплайна
 
 
 # DOCKER - 4
