@@ -1,0 +1,20 @@
+---
+- name: Install docker
+  hosts: all
+  become: true
+
+  tasks:
+  - name: update apt
+    apt:
+      update_caches: yes
+      name: {{packages}}
+    vars:
+      packages:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+
+  - name: Add Docker’s official GPG key
+    uri:
+      
