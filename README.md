@@ -6,7 +6,24 @@ dmitry-appnext microservices repository
 - [Docker-3](#docker-3)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-3)]
 - [Docker-4](#docker-4)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-4)]
 - [GitlabCI-1](#gitlabci-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=gitlab-ci-1)]
+- [Monitoring-1](#gitlabci-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-1)]
 
+
+# Monitoring - 1
+
+## Что было сделано
+
+- Создал докерфайл, который копирует конфигурацию прометеуса на машину с прометеусом
+- Сделан ребилд докер-образов микросервисов (post-py, comment, ui) c поддержкой health-check, образы загружены в докер-хаб
+  https://hub.docker.com/r/dmitryappnext/ui/
+  https://hub.docker.com/r/dmitryappnext/comment/
+  https://hub.docker.com/r/dmitryappnext/post/
+  https://hub.docker.com/r/dmitryappnext/prometheus/
+
+- Поднял сервисы, в том числе и прометеус
+- Хелс-чек для серверов (нужно было добавить алиасы к докер-сетям, чтобы хелс-чеки работали)
+- Уронил один сервис, хелс-чек показывал что он не работает
+- Собрал метрики сервера с помощью Node Exporter
 
 # GITLAB CI - 1
 
