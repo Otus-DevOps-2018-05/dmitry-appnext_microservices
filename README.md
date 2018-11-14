@@ -6,8 +6,15 @@ dmitry-appnext microservices repository
 - [Docker-3](#docker-3)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-3)]
 - [Docker-4](#docker-4)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=docker-4)]
 - [GitlabCI-1](#gitlabci-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=gitlab-ci-1)]
-- [Monitoring-1](#gitlabci-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-1)]
+- [Monitoring-1](#monitoring-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-1)]
+- [Monitoring-2](#monitoring-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-2)]
+- [Logging-1](#logging-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=logging-1)]
+- [Kubernetes-1](#kubernetes-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=kubernetes-1)]
 
+# Kubernetes - 1
+
+## Что было сделано
+пройден туториал k8s the hard way
 
 # Monitoring - 1
 
