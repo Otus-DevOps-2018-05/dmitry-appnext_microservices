@@ -8,6 +8,17 @@ dmitry-appnext microservices repository
 - [GitlabCI-1](#gitlabci-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=gitlab-ci-1)]
 - [Monitoring-1](#monitoring-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-1)]
 - [Monitoring-2](#monitoring-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=monitoring-2)]
+- [Logging-1](#logging-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_microservices.svg?branch=logging-1)]
+
+
+# Logging - 1
+
+## Что было сделано
+Описана докер-инфраструктура для логгирования: ElasticSearch, Fluentd, Kibana
+Была проблема с запуском докер-контейнера с эластиком: в логах контейнера нашел запись "max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]". Решением было увеличить max_map_count командой "sudo sysctl -w vm.max_map_count=262144"
+
+Разобраны логи разной структуры с помощью fluentd
+
 
 # Monitoring - 2
 
